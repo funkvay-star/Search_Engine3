@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC   -shared -Wl,-soname,libInfoExtractor.so -o libInfoExtractor.so CMakeFiles/InfoExtractor.dir/DocumentExtractor.cpp.o CMakeFiles/InfoExtractor.dir/InformationExtractor.cpp.o CMakeFiles/InfoExtractor.dir/InformationSaver.cpp.o 
