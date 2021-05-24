@@ -7,8 +7,8 @@ LoadResult::LoadResult()
 
 }
 
-LoadResult::LoadResult(long Status, std::shared_ptr<std::string> Body) 
-    : status(Status), body(Body) 
+LoadResult::LoadResult(long Status, std::shared_ptr<std::string> Body, const std::string& EffectiveUrl) 
+    : status(Status), body(Body), effectiveUrl(EffectiveUrl)
 {
     
 }
@@ -17,6 +17,11 @@ LoadResult::LoadResult(long Status, std::shared_ptr<std::string> Body)
 std::shared_ptr<std::string> LoadResult::getBody()
 {
     return body;
+}
+
+std::string LoadResult::getEffectiveUrl()
+{
+    return effectiveUrl;
 }
 
 long LoadResult::getStatus()

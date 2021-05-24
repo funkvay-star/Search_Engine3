@@ -13,12 +13,16 @@ class LoadResult
 private:
     long status;
     std::shared_ptr<std::string> body;
+    std::string effectiveUrl;
+
 public:
     LoadResult();
 
-    LoadResult(long Status, std::shared_ptr<std::string> Body);
+    LoadResult(long Status, std::shared_ptr<std::string> Body, const std::string& effectiveUrl);
 
     std::shared_ptr<std::string> getBody();
+
+    std::string getEffectiveUrl();
 
     long int getStatus();
 };

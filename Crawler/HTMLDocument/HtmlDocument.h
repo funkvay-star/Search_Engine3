@@ -12,6 +12,7 @@ private:
     GumboOutput* output;
     
     void visitElement(GumboNode* node, std::function<void(HtmlElement)> visitor);
+    std::string getAbsoluteUrl(std::string& notAbsoluteUrl, const std::string& domain, std::string effectiveUrl);
 public:
     HtmlDocument(const std::string& Url);
     bool parse();

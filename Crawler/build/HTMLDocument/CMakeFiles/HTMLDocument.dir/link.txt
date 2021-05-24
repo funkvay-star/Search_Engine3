@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libHTMLDocument.so -o libHTMLDocument.so CMakeFiles/HTMLDocument.dir/HtmlDocument.cpp.o CMakeFiles/HTMLDocument.dir/HtmlElement.cpp.o CMakeFiles/HTMLDocument.dir/HtmlNode.cpp.o  -lgumbo 

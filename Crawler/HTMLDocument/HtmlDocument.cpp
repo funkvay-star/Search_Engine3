@@ -1,6 +1,32 @@
 #include "HtmlDocument.h"
 
 
+std::string HtmlDocument::getAbsoluteUrl(std::string& notAbsoluteUrl, const std::string& domain, std::string effectiveUrl)
+{
+    if(notAbsoluteUrl[0] != '/' && effectiveUrl[effectiveUrl.size() - 1] != '/')
+    {
+        size_t sizeOfEffectiveUrl = effectiveUrl.size() - 1;
+
+        while(effectiveUrl[sizeOfEffectiveUrl] != '/')
+        {
+            effectiveUrl.resize(effectiveUrl.size() - 1);
+        }
+
+        // https://rau.am/contacts/  phone = https://rau.am/contatcs/phone
+
+        return effectiveUrl + notAbsoluteUrl;
+    }
+    else if(notAbsoluteUrl[0] != '/' && effectiveUrl[effectiveUrl.size() - 1] == '/')
+    {
+        return effectiveUrl + notAbsoluteUrl;
+    }
+    else if(notAbsoluteUrl[0] != '/' && effectiveUrl[effectiveUrl.size() - 1] == '/' ||
+            notAbsoluteUrl[0] != '/' && effectiveUrl[effectiveUrl.size() - 1] != '/')
+    {
+        return domain + notAbsoluteUrl;
+    }
+}
+
 HtmlDocument::HtmlDocument(const std::string& Url) : url(Url), output(nullptr) {}
 
 bool HtmlDocument::parse()

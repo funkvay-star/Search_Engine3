@@ -5,6 +5,11 @@
 #include <string>
 #include "LoadResult.h"
 
+//for C function to find substring in string
+#include <stdlib.h> // used in PageLoader.cpp
+#include <string.h> // used in PageLoader.cpp
+
+
 class PageLoader
 {
 private:

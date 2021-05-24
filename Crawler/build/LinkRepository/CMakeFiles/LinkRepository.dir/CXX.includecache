@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/funkvay/Desktop/SearchEngine_Final3/Project/Crawler/LinkRepository/LinkEntry.cpp
+LinkEntry.h
+/home/funkvay/Desktop/SearchEngine_Final3/Project/Crawler/LinkRepository/LinkEntry.h
+iostream
+-
+
+/home/funkvay/Desktop/SearchEngine_Final3/Project/Crawler/LinkRepository/LinkEntry.h
+ctime
+-
+string
+-
+LinkStatus.h
+/home/funkvay/Desktop/SearchEngine_Final3/Project/Crawler/LinkRepository/LinkStatus.h
+
+/home/funkvay/Desktop/SearchEngine_Final3/Project/Crawler/LinkRepository/LinkRepository.cpp
+LinkRepository.h
+/home/funkvay/Desktop/SearchEngine_Final3/Project/Crawler/LinkRepository/LinkRepository.h
+algorithm
+-
+iostream
+-
+
+/home/funkvay/Desktop/SearchEngine_Final3/Project/Crawler/LinkRepository/LinkRepository.h
+LinkEntry.h
+/home/funkvay/Desktop/SearchEngine_Final3/Project/Crawler/LinkRepository/LinkEntry.h
+vector
+-
+optional
+-
+
+/home/funkvay/Desktop/SearchEngine_Final3/Project/Crawler/LinkRepository/LinkStatus.h
+
